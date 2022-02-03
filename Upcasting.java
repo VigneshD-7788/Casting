@@ -1,0 +1,22 @@
+package Casting;
+
+class  Parent{
+    void PrintData() {
+        System.out.println("method of parent class");
+    }
+}
+
+class Child extends Parent {
+    void PrintData() {
+        System.out.println("method of child class");
+    }
+}
+public class Upcasting {
+    public static void main(String args[]) {
+
+        Parent obj1 = new Child();
+        Parent obj2 = new Child();
+        obj1.PrintData();
+        obj2.PrintData();
+    }
+}
